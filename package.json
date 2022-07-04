@@ -1,9 +1,9 @@
 {
   "name": "dlovely-websocket",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "WebSocket For Dlovely",
-  "main": "./dist/index.js",
-  "author": "Dlovely <1556468030@qq.com>",
+  "main": "./lib/index.js",
+  "author": "dlovely <1556468030@qq.com>",
   "license": "MIT",
   "keywords": [
     "websocket",
@@ -15,7 +15,7 @@
     "node": ">=4"
   },
   "private": false,
-  "devDependencies": {
+  "dependencies": {
     "@types/node": "^17.0.30"
   }
 }

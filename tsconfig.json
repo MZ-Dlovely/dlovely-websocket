@@ -6,12 +6,12 @@
     "lib": ["esnext","dom"],                  /* 指定要包含在编译中的库文件 */
     "allowJs": true,                          /* 指定要包含在编译中的库文件 */
     "checkJs": true,                          /* 允许在'.js'文件中报告错误 */
-    "jsx": "react-native",                    /* 指定jsx代码生成: 'preserve', 'react-native', or 'react'. */
+    "jsx": "preserve",                        /* 指定jsx代码生成: 'preserve', 'react-native', or 'react'. */
     "declaration": true,                      /* 生成相应的'.d.ts'文件 */
-    "sourceMap": true,                        /* 生成相应的'.map'文件 */
+    // "sourceMap": true,                     /* 生成相应的'.map'文件 */
     // "outFile": "./",                       /* 将输出连接并发送到单个文件 */
-    "outDir": "./dist",                       /* 将输出结构重定向到目录 */
-    "rootDir": "./lib",                       /* 指定输入文件的根目录,用于使用--outDir控制输出目录结构 */
+    "outDir": "lib",                          /* 将输出结构重定向到目录 */
+    "rootDir": "src",                         /* 指定输入文件的根目录,用于使用--outDir控制输出目录结构 */
     "removeComments": true,                   /* 不要输出注释 */
     "noEmit": false,                          /* 不发射输出 */
     // "incremental": true,                   /* 启用增量编译 */
@@ -40,7 +40,7 @@
     // "paths": {},                           /* 将导入重新映射到相对于'baseUrl'的查找位置的一系列条目 */
     // "rootDirs": [],                        /* 运行时项目结构的根文件夹列表。 */
     // "typeRoots": [],                       /* 包含类型定义的文件夹列表。 */
-    "types": ["./env"],                       /* 要包含在编译中的类型声明文件。 */
+    // "types": ["./env"],                    /* 要包含在编译中的类型声明文件。 */
     "allowSyntheticDefaultImports": true,     /* 允许从没有默认导出的模块进行默认导入(这不会影响代码的发出，只是类型检查) */
     "esModuleInterop": true,                  /* 通过为所有导入创建命名空间对象，实现CommonJS和ES模块之间的互操作性(Implies 'allowSyntheticDefaultImports') */
     // "preserveSymlinks": true,              /* 不要解析符号链接的实际路径。 */
@@ -57,5 +57,6 @@
     "experimentalDecorators": true,           /* 启用对ES7装饰器的实验性支持。 */
     "emitDecoratorMetadata": true,            /* 启用对为装饰器发出类型元数据的实验性支持 */
   },
-  "include": ["lib/**/*.ts", "lib/**/*.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "env.d.ts", "options/index.ts"],
+  "exclude": ["options/**/*.ts"]
 }

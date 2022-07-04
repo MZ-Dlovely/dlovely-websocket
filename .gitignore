@@ -1,3 +1,7 @@
 node_modules/
-dist/
+lib/
+options/
+test.*
+yarn.lock
 yarn-error.log
+README.md

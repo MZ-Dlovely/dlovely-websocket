@@ -1,0 +1,9 @@
+node_modules/
+options/
+src/
+.gitignore
+.prettierrc.js
+test.ts
+tsconfig.json
+yarn-error.log
+README.md

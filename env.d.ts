@@ -5,12 +5,7 @@
 /// <reference types="@types/node/crypto" />
 /// <reference types="@types/node/buffer" />
 /// <reference types="@types/node/stream" />
-interface URL {
-  secure: boolean
-}
 
-type may<T> = T | null
-
-interface SocketCallBack {
+export interface SocketCallBack {
   (err?: Error): void
 }

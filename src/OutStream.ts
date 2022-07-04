@@ -1,6 +1,7 @@
 import stream from 'stream'
-import { Connection } from './Connect'
+import { AppConnection } from './SocketConnect'
 import { createBinaryFrame } from './frame'
+import type { SocketCallBack } from '../env'
 
 /**
  * 表示二进制帧的可写流
@@ -9,10 +10,10 @@ export class OutStream extends stream.Writable {
   connection
   minSize
   /**
-   * @param {Connection} connection
+   * @param {AppConnection} connection
    * @param {number} minSize
    */
-  constructor(connection: Connection, minSize: number) {
+  constructor(connection: AppConnection, minSize: number) {
     super()
     this.connection = connection
     this.minSize = minSize
